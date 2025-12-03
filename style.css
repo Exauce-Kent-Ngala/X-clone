@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Classes utilitaires */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+/* PAGE INDEX */
+
+/* PARTIE MAIN */
+.index_main{
+    justify-content: space-evenly;
+    height: 90vh;
+    align-items: center;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.iconeX{
+    height: 400px;
+    width: 500px;
+}
+.contenair_index_main{
+    width: 350px;
+    height: 500px;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+.contenair_index_main_div h1{
+    color: #fff;
+    font-size: 40px;
+}
+.contenair_index_main_div h1 span{
+    font-size: 75px;
+    font-weight: 500;
+}
+/* PARTIE FOOTER */
+.index_footer_ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
