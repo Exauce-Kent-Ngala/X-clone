@@ -7,69 +7,80 @@
     <title>Authentification</title>
 </head>
 <body>
+    <!-- PARTIE MAIN -->
     <main class="flex-row index_main">
+        <!-- Insertion icone X partie gauche -->
         <img class="iconeX" src="images/icone de X.jpg" alt="">
+        <!-- partie droite connexion -->
         <div class="flex-column contenair_index_main">
-            <div class="contenair_index_main_div">
-                <h1><span>ç</span>a se passe maintenant</h1>
+            <!-- conteneur contenant le titre comment ça marche -->
+            <div class="contenair_index_main_div1">
+                <p><span class="big-C">ç</span>a se passe maintenant</p>
             </div>
-            <div>
-                <h2>Inscrivez-vous.</h2>
-                <ul>
-                    <li><a href=""><img src="X-clone/images/google.png" alt="">S'inscrire avec Google</a></li>
-                    <li><a href=""><img src="X-clone/images/AAPL.png" alt="">S'inscrire avec Apple</a></li>
-                    <li>OU</li>
-                    <li><a href="">Créer un compte</a></li>
-                    <li>En vous inscrivant, vous acceptez les <a href="">Conditions d'utilisations</a> et la <a href="">Politique de confidentialité. notamment l'<a href="">utilisation des cookies.</a></a></li>
+            <!-- partie inscription -->
+            <div class="contenair_index_main_div2 flex-column">
+                <h2 class="txtwhite">Inscrivez-vous.</h2>
+                <ul class="flex-column ul_index ul-li">
+                    <li class="ul_index-li text-dec-none flex-row iconR"><img src="images/google.png" alt="" class="img-compte"><a href="" class="txtblack">S'inscrire avec Google</a></li>
+                    <li class="ul_index-li text-dec-none flex-row iconR"><img src="images/AAPL.png" alt="" class="img-compte"><a href="" class="txtblack">S'inscrire avec Apple</a></li>
+                    <li class="OU flex-row">
+                        <hr>
+                        <span class="txtwhite">OU</span>
+                        <hr>
+                    </li>
+                    <li class="ul_index-li text-dec-none Creer_compte"><a href="compte.html" class="txtwhite">Créer un compte</a></li>
+                    <li class="text-dec-none txtgray">En vous inscrivant, vous acceptez les <a href="" class="txtbleu">Conditions d'utilisations</a> et la <a href="" class="txtbleu">Politique de confidentialité.</a> notamment l'<a href="" class="txtbleu">utilisation des cookies.</a></li>
                 </ul>
             </div>
-            <div>
-                <h3>Vous avez déjà un compte?</h3>
-                <ul>
-                    <li><a href="">Se connecter</a></li>
+            <!-- déjà un compte(connexion) -->
+            <div class="contenair_index_main_div3 flex-column">
+                <h3 class="txtwhite">Vous avez déjà un compte?</h3>
+                <ul class="ul-li">
+                    <li class="ul_index-li text-dec-none connecter"><a href="" class="txtbleu connexion">Se connecter</a></li>
                 </ul>
             </div>
         </div>
     </main>
+    <!-- PARTIE FOOTER POUR INDEX  -->
     <footer>
-        <ul class="flex-row index_footer_ul">
-            <li><a href="">A propos</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Télécharger l'application X</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Grok</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Centre d'assistance</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Conditions d'utilisation</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Politique de Confidentialité</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Politique relative aux cookies</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Accessibilité</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href=""></a>Informations sur les publicités</li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Carrières</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Ressources de la marque</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Publicité</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Marketing</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">X pour les professionnels</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Développeurs</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Répertoire</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">Paramètres</a></li>
-            <li><a href="">&#124</a></li>
-            <li><a href="">&#169 2025 X Corp</a></li>
+        <ul class="flex-row index_footer_ul ul-li">
+            <li class="text-dec-none"><a href="">A propos</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Télécharger l'application X</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Grok</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Centre d'assistance</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Conditions d'utilisation</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Politique de Confidentialité</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Politique relative aux cookies</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Accessibilité</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Informations sur les publicités</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Blog</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Carrières</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Ressources de la marque</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Publicité</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Marketing</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">X pour les professionnels</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Développeurs</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Répertoire</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">Paramètres</a></li>
+            <li>&#124</li>
+            <li class="text-dec-none"><a href="">&#169 2025 X Corp</a></li>
         </ul>
     </footer>
 </body>

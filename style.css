@@ -4,8 +4,10 @@
     margin: 0;
     font-family: sans-serif;
 }
+body{
+}
 
-/* Classes utilitaires */
+/* -------------------------Classes utilitaires ---------------*/
 .flex-column{
     display: flex;
     flex-direction: column;
@@ -14,37 +16,234 @@
     display: flex;
     flex-direction: row;
 }
-/* PAGE INDEX */
+/* le style none */
+.ul-li{
+    list-style: none;
+}
+/* les textes en couleur*/
+.txtwhite{
+    color: #fff;
+}
+.txtbleu{
+    color: dodgerblue;
+}
+.txtgray{
+   color: #aeadad; 
+}
+.txtblack{
+    color: black;
+}
+/* images des icones des reseaux ou autres */
+.img-compte{
+    height: 20px;
+    width: 27px;
+    padding-right:0.4em;
+}
+/* les textes decoration */
+.text-dec-none a{
+    text-decoration: none;
+}
+/* LES ICONES D'ENTETES DES PAGES DE CONNEXION */
+.icone-quitter{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+.iconX-header{
+    height: 130px;
+    width: 130px;
+}
+/* ---------------------PAGE INDEX-------------------------- */
 
 /* PARTIE MAIN */
 .index_main{
-    justify-content: space-evenly;
-    height: 90vh;
+    justify-content: space-between;
+    height: 100vh;
     align-items: center;
     padding-left: 10em;
-    padding-right: 10em;
+    padding-right: 20em;
 }
+/* Insertion icone X partie gauche  */
 .iconeX{
-    height: 400px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
 }
+/* partie droite connexion */
 .contenair_index_main{
-    width: 350px;
-    height: 500px;
-    background-color: aquamarine;
-    justify-content: space-between;
+    width: 306px;
+    height: 580px;
+    gap: 55px;
 }
-.contenair_index_main_div h1{
+/* conteneur contenant le titre comment ça marche */
+.contenair_index_main_div1{
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: justify;
 }
-.contenair_index_main_div h1 span{
-    font-size: 75px;
-    font-weight: 500;
+.big-C{
+    font-size: 95px;
+    display: inline-block;
 }
-/* PARTIE FOOTER */
+/* partie inscription  */
+.contenair_index_main_div2{
+    gap: 30px;
+}
+.ul_index{
+    gap: 15px;
+}
+.ul_index-li{
+    text-align: center;
+    background-color: #fff;
+    border: 7px solid transparent;
+    border-radius: 20px;
+    width: 290px;
+}
+.iconR{
+    justify-content: center;
+}
+.OU{
+    align-items: center;
+    gap: 10px;
+}
+.OU hr{
+    flex: 1;
+    border: none;
+    border-top: 2px solid #aeadad;
+}
+.Creer_compte{
+    font-weight: 700;
+    background-color: dodgerblue;
+    padding: 0.3em 0;
+}
+/* déjà un compte(connexion)  */
+.connecter{
+    background-color: transparent;
+    border: 2px solid rgb(174, 211, 248);
+    padding: 0.6em 0;
+}
+.connexion{
+    font-weight: 700;
+}
+.contenair_index_main_div3{
+    gap: 15px;
+    padding-bottom: 3em;
+}
+/* PARTIE FOOTER POUR INDEX */
 .index_footer_ul{
+    margin-top: 10em;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    color:#aeadad ;
+    padding-bottom: 3em;
+}
+.index_footer_ul li a{
+    color:#aeadad ;
+}
+/* --------------------------PAGE COMPTE --------------------*/
+.header_compte{
+    background-color: cornflowerblue;
+}
+.header_compte_first_div{
+    justify-content: center;
+    background-color: darksalmon;
+    width: 100%;
+}
+.main_compte{
+    align-items: center;
+}
+.form-compte{
+    margin: 3em 0;
+    background-color: crimson;
+    width: 880px;
+    height: 300px;
+    justify-content: space-around;
+}
+.main_compte h1{
+    background-color: darkkhaki;
+    font-size: 65px;
+    font-weight: bolder;
+    
+}
+.save{
+    background-color: cornflowerblue;
+    gap: 20px;
+}
+.save input{
+    border-radius: 5px;
+    border: 2px solid #2f3336;
+    padding: 1em;
+    font-size: 19px;
+    width: 600px;
+}
+.email-compte{
+    justify-content: end;
+    width: 600px;
+    font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* petit écran */
+@media screen and (max-width:767px){
+    /* --------------PARTIE MAIN ------------------------ */
+    .index_main{
+        flex-direction: column;
+        height: auto;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    /* Insertion icone X partie gauche  */
+    .iconeX{
+        height: 150px;
+        width: 150px;
+        background-color: antiquewhite;
+    }
+    /* PARTIE FOOTER POUR INDEX*/
+    .index_footer_ul{
+        padding-bottom: 0em;
+    }
+}
+
+/* Tablette */
+@media screen  and (min-width:768px ) and (max-width:1024px){
+    .index_main{
+        justify-content: center;
+        height: 100vh;
+    }
+    .iconeX{
+        height: 450px;
+        width: 450px;
+    }
 }
