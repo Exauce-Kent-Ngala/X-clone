@@ -8,28 +8,90 @@
 </head>
 <body>
     <!-- PAGE COMPTE -->
-    <header class="flex-row header_compte">
-        <img class="icone-quitter" src="images/round_16171663.png" alt="" >
-        <div class="flex-row header_compte_first_div">
-            <img class="iconX-header" src="images/icone de X.jpg" alt="">
-        </div>
+     <!-- header -->
+    <header class="header_compte">
+        <nav class="flex-row nav-compte">
+            <ul class="flex-row icone-X-entete">
+                <li class="ul-li"><a href="index.html"><img class="icone-quitter" src="images/round_16171663.png" alt="" ></a></li>
+            </ul>
+            <ul class="flex-row icX">
+                <li class="ul-li"><a href="index.html"><img class="iconX-header" src="images/icone de X.jpg" alt=""></a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="flex-column main_compte">
-        <form class="form-compte flex-column" action="" method="post">
-            <h1 class="txtwhite">Créer votre compte</h1>
-            <div class="flex-column save">
-                <input type="text" required placeholder="Nom et prénom">
-                <input type="tel" placeholder="Téléphone">
+    <!-- Partie main compte -->
+    <main class="conteneur-main-compte flex-column">
+        <div class="formulaire-compte flex-column">
+            <!-- premier formulaire -->
+            <div class="first-formulaire flex-column">
+                <!-- insertion des données -->
+                <div class="conteneur-données flex-column">
+                    <h1>Créer votre compte</h1>
+                    <div class="flex-column save">
+                        <input type="text" required placeholder="Nom et prénom">
+                        <input type="tel" placeholder="Téléphone">
+                    </div>
+                </div>
+                <!-- Utilisez email? -->
+                <div class="conteneur-email flex-row">
+                    <a href="">Utiliser un email</a>
+                </div>
             </div>
-            <div class="flex-row email-compte text-dec-none">
-                <a class="txtbleu" href="">Utiliser un email</a>
+            <!-- second formulaire -->
+            <div class="flex-column born">
+                <h2>Date de naissance</h2>
+                <div><p>Cette information ne sera pas affichée publiquement. Confirmez votre âge,même si ce compte
+                    est pour une entreprise, un animal de compagnie ou autre chose.</p>
+                </div>
+                <div class="date_born flex-row">
+                    <select name="Mois" id="Mois">
+                        <option value="">Mois</option>
+                        <optgroup class="optiongroupe">
+                            <option value="Janvier">Janvier</option>
+                            <option value="Février">Février</option>
+                            <option value="Mars">Mars</option>
+                            <option value="Avril">Avril</option>
+                            <option value="Mai">Mai</option>
+                            <option value="Juin">Juin</option>
+                            <option value="Juillet">Juillet</option>
+                            <option value="Aout">Aout</option>
+                            <option value="Septembre">Septembre</option>
+                            <option value="Octobre">Octobre</option>
+                            <option value="Novembre">Novembre</option>
+                            <option value="Décembre">Décembre</option>
+                        </optgroup>
+                    </select>
+                    <select name="Jour" id="Jour">
+                        <option value="">Jour</option>
+                        <optgroup></optgroup>
+                    </select>
+                    <select name="Année" id="Année">
+                        <option value="">Année</option>
+                        <optgroup></optgroup>
+                    </select>
+                </div>
             </div>
-        </form>
-        <h2>Date de naissance</h2>
-        <p>Cette information ne sera pas affichée publiquement. Confirmez votre âge,même si ce compte
-            est pour une entreprise, un animal de compagnie ou autre chose.
-        </p>
+        </div>
     </main>
-    <footer></footer>
+    <!-- FOOTER COMPTE -->
+    <footer class="footer-compte flex-column">
+        <div class="conteneur-footer flex-row">
+            <div class="conteneur-suivant flex-row">
+                <a href="">suivant</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<!-- 
+    <footer class="footer-compte">
+        <div class="conteneur-footer-compte flex-row">
+            <ul class="ul-li suivant flex-column">
+                <li class="ul_compte-li text-dec-none connecter"><a href="" class="btn_suivant">Suivant</a></li>
+            </ul>
+        </div>
+    </footer> -->
 </body>
 </html>

@@ -47,7 +47,8 @@ body{
 .icone-quitter{
     height: 50px;
     width: 50px;
-    background-color: blue;
+    background-color: #fff;
+    border-radius: 25px;
 }
 .iconX-header{
     height: 130px;
@@ -58,7 +59,6 @@ body{
 /* PARTIE MAIN */
 .index_main{
     justify-content: space-between;
-    height: 100vh;
     align-items: center;
     padding-left: 10em;
     padding-right: 20em;
@@ -67,19 +67,19 @@ body{
 .iconeX{
     height: 600px;
     width: 600px;
+    border-radius: 20px;
 }
 /* partie droite connexion */
 .contenair_index_main{
-    width: 306px;
-    height: 580px;
-    gap: 55px;
+    width: 30%;
+    gap: 35px;
 }
 /* conteneur contenant le titre comment ça marche */
 .contenair_index_main_div1{
     color: #fff;
     font-size: 50px;
     font-weight: bold;
-    text-align: justify;
+    text-align: start;
 }
 .big-C{
     font-size: 95px;
@@ -97,14 +97,15 @@ body{
     background-color: #fff;
     border: 7px solid transparent;
     border-radius: 20px;
-    width: 290px;
+    width: 90%;
 }
 .iconR{
     justify-content: center;
 }
 .OU{
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    width: 90%;
 }
 .OU hr{
     flex: 1;
@@ -142,45 +143,137 @@ body{
     color:#aeadad ;
 }
 /* --------------------------PAGE COMPTE --------------------*/
+/* header */
 .header_compte{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #000;
+}
+.nav-compte{
+    width: 60%;
+    justify-content: space-between;
+}
+.icone-X-entete{
+    width: 50%;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.icX{
+    width: 22%;
+    justify-content: start;
+}
+
+/* Partie main compte */
+.conteneur-main-compte{
+    height: 100vh;
+    align-items: center;
     background-color: cornflowerblue;
 }
-.header_compte_first_div{
-    justify-content: center;
-    background-color: darksalmon;
-    width: 100%;
+.formulaire-compte{
+    padding-top: 10em;
+    background-color: bisque;
+    width: 60%;
+    height: 100%;
 }
-.main_compte{
-    align-items: center;
+/* premier formulaire */
+.first-formulaire{
+    background-color: darkcyan;
+    gap: 20px;
 }
-.form-compte{
-    margin: 3em 0;
-    background-color: crimson;
-    width: 880px;
-    height: 300px;
-    justify-content: space-around;
+/* insertion des données */
+.conteneur-données{
+    gap: 50px;
 }
-.main_compte h1{
-    background-color: darkkhaki;
-    font-size: 65px;
-    font-weight: bolder;
-    
+.conteneur-données h1{
+    color: #fff;
+    font-size: 63px;
+    font-weight: bolder; 
 }
 .save{
-    background-color: cornflowerblue;
     gap: 20px;
 }
 .save input{
     border-radius: 5px;
-    border: 2px solid #2f3336;
+    border: 2px solid #aeadad;
     padding: 1em;
     font-size: 19px;
-    width: 600px;
 }
-.email-compte{
+/* Utilisez email?  */
+.conteneur-email{
     justify-content: end;
-    width: 600px;
+}
+.conteneur-email a{
+    text-decoration: none;
+    font-size: 20px;
+    color: dodgerblue;
+}
+/* second formulaire */
+.born{
+    margin-top: 1.5em;
+    background-color: darkorange;
+    gap: 20px;
+    width: auto;
+}
+.born h2{
+    color: #fff;
+}
+.born div p{
     font-size: 19px;
+    color: #aeadad;
+}
+
+.date_born{
+    gap: 20px;
+}
+.date_born select{
+    color: #aeadad;
+    border: 2px solid #aeadad;
+    border-radius: 5px;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+#Mois{
+    width: 50%;
+    height: 100px;
+    font-size: 20px;
+}
+#Jour{
+    width: 25%;
+    font-size: 20px;
+}
+#Année{
+    width: 35%;
+    font-size: 20px;
+}
+
+/* FOOTER COMPTE */
+.footer-compte{
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+.conteneur-footer{
+    background-color: darkgreen;
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.conteneur-suivant{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border: 10px solid transparent;
+    border-radius: 20px;
+    background-color:#aeadad;
+}
+.conteneur-suivant a{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000;
 }
 
 
@@ -225,17 +318,68 @@ body{
         padding-right: 0em;
     }
     /* Insertion icone X partie gauche  */
+    .conteneur-img-icone{
+        width: 100%;
+        justify-content: start;
+    }
     .iconeX{
-        height: 150px;
-        width: 150px;
-        background-color: antiquewhite;
+        height: 60px;
+        width: 60px;
+    }
+    .contenair_index_main{
+        width: 80%;
+        gap: 35px;
+    }
+    /* conteneur contenant le titre comment ça marche */
+    .contenair_index_main_div1{
+        font-size: 50px;
+        text-align: start;
+    }
+    .big-C{
+        font-size: 79px;
+        display: inline-block;
+    
     }
     /* PARTIE FOOTER POUR INDEX*/
+    .footer_index{
+        height: auto;
+    }
     .index_footer_ul{
         padding-bottom: 0em;
     }
-}
+    /* --------------------------PAGE COMPTE --------------------*/
+    /* header */
+    .icone-quitter{
+        height: 20px;
+        width: 20px;
+    }
+    .iconX-header{
+        height: 60px;
+        width: 60px;
+    }
+    /* Partie main compte */
+    .conteneur-main-compte{
+        height: auto;
+        padding: 3em;
+    }
+    .formulaire-compte{
+        width: auto;
+    }
+    /* insertion des données */
+    .conteneur-données h1{
+        font-size: 43px;
+    }
+    /* second formulaire */
+    #Mois{
+        height: auto;
+    }
+    /* FOOTER COMPTE */
+    .conteneur-footer{
+        width: 100%;
+        padding: 1.5em;
+    }
 
+}
 /* Tablette */
 @media screen  and (min-width:768px ) and (max-width:1024px){
     .index_main{
@@ -243,7 +387,11 @@ body{
         height: 100vh;
     }
     .iconeX{
-        height: 450px;
+        height: 550px;
         width: 450px;
+    }
+    /* partie droite connexion */
+    .contenair_index_main{
+        width: auto;
     }
 }
