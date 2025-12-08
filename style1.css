@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* --------------------- classe utilitaire --------------------*/
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+/* ---------------------------PAGE HOME----------------------- */
+/* Header home */
+.main-header{
+    background-color: blueviolet;
+    width: 30%;
+    height: auto;
+    align-items: end;
+    gap: 50px;
+}
+.nav-compte{
+    background-color: cadetblue;
+    width: auto;
+    gap: 30px;
+}
+.iconX-header{
+    height: 50px;
+    width: 50px;
+    fill: #fff;
+}
+.iconeX{}
+.sectionIcone{
+    gap: 20px;
+}
+.menu-icone{
+    align-items: center;
+    gap: 30px;
+}
+.menu-icone svg{
+    height: 40px;
+    width: 40px;
+    fill: white;
+}
+.menu-icone a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.more{
+    border-radius: 20px;
+    border: 5px solid #fff;
+}
+.poster{
+    background-color: blue;
+   width: 60%;
+}
+.poster-li{
+    border-radius: 40px;
+    background-color: #fff;
+    border: 7px solid transparent;
+    text-decoration: none;
+    justify-content: center;
+    padding: 1em;
+}
+.poster-li a{
+    text-decoration: none;
+}
