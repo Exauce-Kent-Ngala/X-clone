@@ -5,6 +5,7 @@
     font-family: sans-serif;
 }
 body{
+    background-color: #000;
 }
 
 /* -------------------------Classes utilitaires ---------------*/
@@ -47,12 +48,7 @@ body{
 .icone-quitter{
     height: 50px;
     width: 50px;
-    background-color: #fff;
-    border-radius: 25px;
-}
-.iconX-header{
-    height: 130px;
-    width: 130px;
+    fill: #fff;
 }
 /* ---------------------PAGE INDEX-------------------------- */
 
@@ -66,10 +62,10 @@ body{
     height: 100vh;
 }
 /* Insertion icone X partie gauche  */
-.iconeX{
+.iconX-header{
     height: 600px;
     width: 600px;
-    border-radius: 20px;
+    fill: #fff;
 }
 /* partie droite connexion */
 .contenair_index_main{
@@ -166,6 +162,11 @@ body{
 .icX{
     width: 22%;
     justify-content: start;
+}
+.iconeX{
+    height: 120px;
+    width: 120px;
+    fill: #fff;
 }
 
 /* Partie main compte */
@@ -443,7 +444,7 @@ body{
         width: 100%;
         justify-content: start;
     }
-    .iconeX{
+    .iconX-header{
         height: 60px;
         width: 60px;
     }
@@ -459,7 +460,6 @@ body{
     .big-C{
         font-size: 79px;
         display: inline-block;
-    
     }
     /* PARTIE FOOTER POUR INDEX*/
     .footer_index{
@@ -471,10 +471,10 @@ body{
     /* --------------------------PAGE COMPTE --------------------*/
     /* header */
     .icone-quitter{
-        height: 20px;
-        width: 20px;
+        height: 30px;
+        width: 30px;
     }
-    .iconX-header{
+    .iconeX{
         height: 60px;
         width: 60px;
     }
@@ -535,7 +535,7 @@ body{
         justify-content: center;
         height: 100vh;
     }
-    .iconeX{
+    .iconX-header{
         height: 550px;
         width: 450px;
     }
@@ -549,6 +549,9 @@ body{
     .main-compte{
         height: 100vh;
         padding-top: 15em;
+    }
+    .footer_index{
+        padding-top: 5em;
     }
     /* ------------------PAGE SE CONNECTER1------------------------- */
     /* header (cfr Header Page Compte.html */
