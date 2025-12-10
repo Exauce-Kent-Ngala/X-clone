@@ -4,6 +4,9 @@
     margin: 0;
     font-family: sans-serif;
 }
+body{
+    justify-content: space-around;
+}
 /* --------------------- classe utilitaire --------------------*/
 .flex-column{
     display: flex;
@@ -14,26 +17,41 @@
     flex-direction: row;
 }
 /* ---------------------------PAGE HOME----------------------- */
+/* Conteneur principal */
+.conteneurPrincipal{
+}
 /* Header home */
 .main-header{
-    background-color: blueviolet;
-    width: 30%;
+    background-color: black;
+    width: 40%;
     height: auto;
     align-items: end;
+    gap: 100px;
+}
+/* Première partie header */
+.conteneurDiv1Header{
     gap: 50px;
+    width: 75%;
+    align-items: end;
 }
 .nav-compte{
-    background-color: cadetblue;
-    width: auto;
+    width: 85%;
     gap: 30px;
+}
+.enteteX{
+    position: fixed;
+    z-index: 1000;
+    background-color: #000;
+    width: 34%;
+    justify-content: center;
 }
 .iconX-header{
     height: 50px;
     width: 50px;
     fill: #fff;
 }
-.iconeX{}
 .sectionIcone{
+    margin-top: 5em;
     gap: 20px;
 }
 .menu-icone{
@@ -48,14 +66,18 @@
 .menu-icone a{
     font-size: 20px;
     text-decoration: none;
+    color: #fff;
+}
+.menu-icone a :hover{
+    font-weight: bolder;
 }
 .more{
     border-radius: 20px;
     border: 5px solid #fff;
 }
 .poster{
-    background-color: blue;
-   width: 60%;
+    width: 100%;
+    height: auto;
 }
 .poster-li{
     border-radius: 40px;
@@ -64,7 +86,328 @@
     text-decoration: none;
     justify-content: center;
     padding: 1em;
+    width: 90%;
 }
 .poster-li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+/* Deuxième partie header */
+.conteneurDiv2Header{
+    width: 75%;
+    gap: 25px;
+    align-items: center;
+}
+.monImage{
+    border-radius: 200px;
+    height: 80px;
+    width: 80px;
+}
+.monNom{
+    gap: 10px;
+    height: 50px;
+}
+.monNom p{
+    font-size: 17px;
+}
+.surnom{
+    font-weight: bolder;
+    color: #fff;
+}
+.Ngala{
+    color: #aeadad;
+}
+.conteneurDiv2Header svg{
+    height: 40px;
+    width: 50px;
+    fill: #fff;
+}
+.hr{
+    border-radius: 20px;
+    height: 5px;
+    background-color: #aeadad;
+}
+/* Main home */
+.MainHome{
+    width: 100%;
+    background-color: bisque;
+}
+.sectionPublication{
+    width: 60%;
+    background-color: brown;
+}
+/* navigation */
+.mainNav{
+    width: 35%;
+    position: fixed;
+    z-index: 1000;
+    font-size: 19px;
+    height: 70px;
+    justify-content: space-around;
+    font-weight: bolder;
+    align-items: center;
+    background-color: black;
+}
+.mainNav div a {
+    color: #fff;
+}
+.pourVous {
+    padding-top: 2em;
+}
+.pourVous:hover {
+    width: 50%;
+    border-bottom: 5px solid #0070DD;
+    background-color: rgba(000 , 112, 192, 0.15);
+    padding-bottom: 0.5em;   
+}
+.pourVous a{
+    text-align: center;
+}
+.mainNav a{
+    text-decoration: none;
+}
+/* Section1 */
+/* premier conteneur de la section */
+.section1MainHome{
+    margin-top: 6em;
+    height: 100%;
+    background-color: #000;
+}
+.conteneurMainHome1{
+    justify-content: space-around;
+    height: 150px;
+}
+.conteneurHappening{
+    width: 75%;
+}
+.conteneurHappening div{
+    padding-right: 2em;
+}
+.conteneurHappeningWhat{
+    justify-content: space-around;
+    font-size: 20px;
+}
+.conteneurHappeningWhat input{
+    color: #aeadad;
+    border-radius: 5px;
+    border: 0px solid ;
+    padding: 1em;
+    font-size: 19px;
+    background-color: #000;
+}
+.conteneurHappeningDIV{
+    gap: 20px;
+    padding-left: 1em;
+}
+.state{
+    transform: rotate(90deg);
+}
+.Poster1{
+    width: 100%;
+    height: 10em;
+    justify-content: center;
+    align-items: end;
+    
+}
+.Poster1-li{
+    border-radius: 40px;
+    background-color: #fff;
+    border: 7px solid transparent;
+    text-decoration: none;
+    justify-content: center;
+    padding: 0.2em;
+    width: 100%;
+}
+.Poster1-li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+/* deuxième conteneur de la section */
+.conteneurMainHome2{
+    gap: 25px;
+}
+.conteneurTitle{
+    width: 100%;
+    height: 3em;
+    gap: 20px;
+    align-items: center;
+}
+.conteneurTitle span{
+    color: #aeadad;
+}
+.ConteneurCNN{
+    gap: 10px;
+    align-items: center;
+}
+.ConteneurCNN a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+}
+.conteneurPublication{
+    gap: 20px;
+}
+.conteneurPublication p{
+    text-align: start;
+    color: #fff;
+}
+.imagePublié{
+    border-radius: 10%;
+    height: auto;
+    width: 80%;
+}
+.ConteneurIconePublication{
+    gap: 50px;
+    width: 100%;
+    height: 80px;
+    text-decoration: none;
+}
+.ConteneurIconePublication div{
+    align-items: center;
+    gap: 10px;
+}
+.ConteneurIconePublication div span{
+    color: #aeadad;
+    font-size: 15px;
+}
+.conteneurMainHomeIMG{
+    padding-top: 0.5em;
+    padding-left: 2em;
+
+}
+
+/* Section Notification */
+.Notification{
+    width: 45%;
+    background-color: #0070DD;
+    align-items: start;
+}
+/* conteneur des notifications */
+.conteneurNotif{
+    padding-top: 1em;
+    background-color: cadetblue;
+    width: 80%;
+    padding-left: 2em;
+    gap: 24px;
+}
+.conteneurRecherche{
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    border-radius: 200px;
+    overflow: hidden;
+    border: 2px solid #aeadad;
+    background-color: #000;
+}
+.conteneurRecherche input{
+    flex: 1;
+    padding: 0.8em;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+}
+.Btnrecherche {
+    padding-left: 2em;
+    border: none;
+    outline: none;
+    background-color: #000;
+}
+/* Conteneur notif aimer */
+.conteneurAimer{
+    gap: 20px;
+    border: 2px solid #aeadad;
+    padding: 2em 0.8em;
+    border-radius: 20px;
+}
+.conteneurAimer h2{
+    color: #fff;
+}
+.conteneurDivAimer{
+    gap: 20px;
+}
+
+
+
+.conteneurDiv3Aimer{
+    background-color: aqua;
+    width: 100%;
+    gap: 25px;
+    align-items: center;
+}
+.conteneurDiv3Image{
+    align-items: center;
+    gap: 7px;
+}
+.monImageNotif{
+    border-radius: 200px;
+    height: 70px;
+    width: 70px;
+}
+.monNomNotif{
+    gap: 7px;
+}
+.posterNotif{
+    background-color: brown;
+    width: 100%;
+    align-items: end;
+}
+.posterNotif-li{
+    border-radius: 40px;
+    background-color: #fff;
+    border: 7px solid transparent;
+    text-decoration: none;
+    justify-content: center;
+    padding: 0.2em;
+    width: 50%;
+}
+.posterNotif-li a{
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+/* conteneur notif ce qui se passe */
+.conteneurCeQuiSePasse{
+    background-color: brown;
+}
+.conteneurCeQuiSePasse1{
+    background-color: #0070DD;
+    height: 100px;
+    width: 400px;
+    justify-content: space-around;
+}
+.conteneurCeQuiSePasse1 a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #aeadad;
+    font-size: 20px;
+}
+.troispoints{
+    align-items: end;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.troispoints img{
+    height: 40px;
+    width: 40px;
+}
+/* footer côté conteneur des notifications */
+.footer_index{
+    background-color: #000;
+}
+.index_footer_ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    color:#aeadad ;
+    padding-bottom: 3em;
+    list-style: none;
+}
+.index_footer_ul li a{
+    color:#aeadad ;
     text-decoration: none;
 }
