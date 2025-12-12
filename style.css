@@ -355,12 +355,12 @@ body{
 /* Main de connecter2 */
 .main-connecter2{
     align-items: center;
-    padding-top: 15em;
+    padding-top: 10em;
     height: 100%;
     background-color: #000;
 }
 .conteneurSectionConnecter2{
-    gap: 500px;
+    gap: 70px;
     width: 70%;
 }
 .MotDePasse{

@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 /* --------------------- classe utilitaire --------------------*/
 .flex-column{
@@ -17,6 +17,22 @@ body{
     flex-direction: row;
 }
 /* ---------------------------PAGE HOME----------------------- */
+/* Entete */
+.enteteX{
+    position: fixed;
+    z-index: 1000;
+    background-color: black;
+    width: 29%;
+    justify-content: center;
+    padding-right: 6em;
+    height: 70px;
+}
+.iconX-header{
+    height: 50px;
+    width: 50px;
+    fill: #fff;
+}
+
 /* Conteneur principal */
 .conteneurPrincipal{
 }
@@ -37,18 +53,6 @@ body{
 .nav-compte{
     width: 85%;
     gap: 30px;
-}
-.enteteX{
-    position: fixed;
-    z-index: 1000;
-    background-color: #000;
-    width: 34%;
-    justify-content: center;
-}
-.iconX-header{
-    height: 50px;
-    width: 50px;
-    fill: #fff;
 }
 .sectionIcone{
     margin-top: 5em;
@@ -131,23 +135,20 @@ body{
 /* Main home */
 .MainHome{
     width: 100%;
-    background-color: bisque;
 }
+/* section publication  */
 .sectionPublication{
     width: 60%;
-    background-color: brown;
+    background-color: #000;
 }
 /* navigation */
 .mainNav{
-    width: 35%;
-    position: fixed;
-    z-index: 1000;
+    width: auto;
     font-size: 19px;
     height: 70px;
     justify-content: space-around;
     font-weight: bolder;
     align-items: center;
-    background-color: black;
 }
 .mainNav div a {
     color: #fff;
@@ -170,8 +171,7 @@ body{
 /* Section1 */
 /* premier conteneur de la section */
 .section1MainHome{
-    margin-top: 6em;
-    height: 100%;
+    margin-top: 1em;
     background-color: #000;
 }
 .conteneurMainHome1{
@@ -281,21 +281,30 @@ body{
 /* Section Notification */
 .Notification{
     width: 45%;
-    background-color: #0070DD;
     align-items: start;
+    background-color: #000;
 }
 /* conteneur des notifications */
 .conteneurNotif{
-    padding-top: 1em;
-    background-color: cadetblue;
+    padding-top: 6em;
     width: 80%;
     padding-left: 2em;
     gap: 24px;
 }
+.conteneurNotif0{
+    padding-top: 1em;
+    width: 100%;
+    padding-left: 2em;
+    gap: 24px;
+    height: 90px;
+    background-color: #000; 
+    z-index: 1000px;
+    position: fixed;
+}
 .conteneurRecherche{
     align-items: center;
     gap: 7px;
-    width: 100%;
+    width: 25%;
     border-radius: 200px;
     overflow: hidden;
     border: 2px solid #aeadad;
@@ -330,10 +339,7 @@ body{
     gap: 20px;
 }
 
-
-
 .conteneurDiv3Aimer{
-    background-color: aqua;
     width: 100%;
     gap: 25px;
     align-items: center;
@@ -351,7 +357,6 @@ body{
     gap: 7px;
 }
 .posterNotif{
-    background-color: brown;
     width: 100%;
     align-items: end;
 }
@@ -370,12 +375,14 @@ body{
     font-weight: bolder;
     color: black;
 }
-/* conteneur notif ce qui se passe */
-.conteneurCeQuiSePasse{
-    background-color: brown;
+.VoirPlus{
+    font-size: 19px;
+    text-decoration: none;
+    color: #0070DD;
 }
+/* conteneur notif ce qui se passe */
+
 .conteneurCeQuiSePasse1{
-    background-color: #0070DD;
     height: 100px;
     width: 400px;
     justify-content: space-around;
@@ -383,13 +390,16 @@ body{
 .conteneurCeQuiSePasse1 a{
     text-decoration: none;
     font-weight: bolder;
+    color: #fff;
+    font-size: 20px;
+}
+.conteneurCeQuiSePasse1{
     color: #aeadad;
     font-size: 20px;
 }
 .troispoints{
     align-items: end;
     width: 100%;
-    background-color: antiquewhite;
 }
 .troispoints img{
     height: 40px;
@@ -411,3 +421,260 @@ body{
     color:#aeadad ;
     text-decoration: none;
 }
+/* Messagéries */
+.messagerie{
+    width: 95%;
+    height: 130px;
+    align-items: end;
+    justify-content: space-between;
+
+}
+.iconeGrok{
+    border: 2px solid #aeadad;
+    border: 3px;
+    padding-right: 1em;
+}
+.messagerieGrok{
+    border: none;
+    outline: none;
+}
+.messagerie button svg{
+    fill: #fff;
+    background-color: #000;
+}
+.EcrireMessage{
+    width: 70%;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #aeadad;
+}
+.EcrireMessage input{
+    flex: 1;
+    padding: 0.8em;
+    border: none;
+    width: 50%;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bolder;
+}
+.btnIconeMessage {
+    gap: 10px;
+    padding-right: 2em;
+    background-color: #000;
+    
+}
+.btnIconeMessage button{
+    border: none;
+    outline: none;
+    background-color: #000;
+}
+.btnIconeMessage button img{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px){
+    /* Entete */
+    .enteteX{
+        position: relative;
+        background-color: black;
+        width: auto;
+        justify-content: center;
+        padding-right: 0em;
+        height: 70px;
+    }
+    /* Conteneur principal */
+    .conteneurPrincipal{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /* Header home */
+    .main-header{
+        background-color: black;
+        width: 100%;
+        padding: 1em;
+    }
+    /* Première partie header */
+    .conteneurDiv1Header{
+        width: 100%;
+        background-color: #0070DD;
+    }
+    .nav-compte{
+        width: 100%;
+    } 
+    .sectionIcone{
+        display:flex ;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0em;
+        background-color: aqua;
+    }
+    .menu-icone{
+        background-color: bisque;
+    }
+    .menu-icone a{
+        display: none;
+    }
+    .poster{
+        display: none;
+    }
+    /* Deuxième partie header */
+    .conteneurDiv2Header{
+        display: none;
+    }
+    .MainHome{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* Section Notification */
+    .Notification{
+        padding-top: 4em;
+        width: auto;
+        align-items: start;
+        background-color: #000;
+    }
+    /* conteneur des notifications */
+    .conteneurNotif{
+        display: none;
+    }
+    .conteneurNotif0{
+        display: none;
+        padding: 1em 2em;
+        width: auto;
+        gap: 24px;
+        height: 90px;
+        background-color: #000; 
+        z-index: 1000px;
+        position: fixed;
+    }
+    .conteneurRecherche{
+        align-items: center;
+        gap: 7px;
+        width: auto;
+        border-radius: 200px;
+        overflow: hidden;
+        border: 2px solid #aeadad;
+        background-color: #000;
+    }
+    .messagerie{
+        display: none;
+    }
+
+    /* section publication */
+    .sectionPublication{
+        width: auto;
+        background-color: #000;
+    }
+    .mainNav{
+        display: none;
+    }
+    /* Section1 */
+    /* premier conteneur de la section */
+    .section1MainHome{
+        margin-top: 10em;
+        background-color: #a91515;
+        width: 100%;
+        padding-top: 3em;
+    }
+    .monImage{
+        height: 70px;
+        width: 70px;
+    }
+    .conteneurHappening{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 3em;
+    }
+    .conteneurHappening div{
+    padding-right: 0em;
+    }
+    .conteneurHappeningWhat{
+    gap: 15px;
+    }
+    .conteneurHappeningWhat input{
+    color: #aeadad;
+    border-radius: 5px;
+    border: 0px solid ;
+    padding: 0.2em;
+    font-size: 19px;
+    background-color: #000;
+    width: auto;
+    }
+    .Poster1{
+    width: 100%;
+    height: 20em;
+    align-items: center;
+    }
+    .Poster1-li{
+        width: 50%;
+    }
+
+    /* deuxième conteneur de la section */
+    .conteneurMainHome2{
+    gap: 10px;
+    }
+    .conteneurTitle{
+        gap: 2px;
+        width: auto;
+    }
+    .conteneurPublication{
+        width: auto;
+    }
+
+    .imagePublié{
+        width: 80%;
+    }
+    .ConteneurIconePublication{
+        gap: 10px;
+        width: 100%;
+        height: 80px;
+        text-decoration: none;
+    }
+.conteneurMainHomeIMG{
+    padding-top: 0.5em;
+    padding-left: 0em;
+
+}
+
+
+
+
+
+}
+
+
