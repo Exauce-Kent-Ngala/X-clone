@@ -506,28 +506,26 @@ body{
 @media screen and (max-width:767px){
     /* Entete */
     .enteteX{
-        position: relative;
-        background-color: black;
-        width: auto;
-        justify-content: center;
+        background-color: #000;
+        width: 100%;
         padding-right: 0em;
         height: 70px;
     }
     /* Conteneur principal */
     .conteneurPrincipal{
-        display: flex;
+        padding-top: 4em;
         flex-direction: column-reverse;
     }
-    /* Header home */
+    /* Header home  */
     .main-header{
         background-color: black;
         width: 100%;
         padding: 1em;
     }
-    /* Première partie header */
+    /* Première partie header  */
     .conteneurDiv1Header{
         width: 100%;
-        background-color: #0070DD;
+        background-color: #000;
     }
     .nav-compte{
         width: 100%;
@@ -538,10 +536,7 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 0em;
-        background-color: aqua;
-    }
-    .menu-icone{
-        background-color: bisque;
+        background-color: #000;
     }
     .menu-icone a{
         display: none;
@@ -549,36 +544,27 @@ body{
     .poster{
         display: none;
     }
-    /* Deuxième partie header */
+    /* Deuxième partie header  */
     .conteneurDiv2Header{
         display: none;
     }
+    /* Main home */
     .MainHome{
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: column-reverse;
     }
-
-    /* Section Notification */
+    /* Section Notification  */
     .Notification{
-        padding-top: 4em;
+        padding-top: 0em;
         width: auto;
         align-items: start;
-        background-color: #000;
-    }
-    /* conteneur des notifications */
-    .conteneurNotif{
-        display: none;
     }
     .conteneurNotif0{
-        display: none;
         padding: 1em 2em;
-        width: auto;
-        gap: 24px;
+        width: 100%;
         height: 90px;
         background-color: #000; 
-        z-index: 1000px;
-        position: fixed;
     }
     .conteneurRecherche{
         align-items: center;
@@ -589,73 +575,94 @@ body{
         border: 2px solid #aeadad;
         background-color: #000;
     }
+    /* conteneur des notifications  */
+    .conteneurNotif{
+        display: none;
+    }
+    /* Messagérie */
     .messagerie{
         display: none;
     }
-
-    /* section publication */
+    /* section publication  */
     .sectionPublication{
         width: auto;
         background-color: #000;
     }
-    .mainNav{
-        display: none;
-    }
     /* Section1 */
-    /* premier conteneur de la section */
     .section1MainHome{
-        margin-top: 10em;
-        background-color: #a91515;
-        width: 100%;
+        margin-top: 0em;
+        background-color: #000;
+        width: auto;
         padding-top: 3em;
+    }
+    /* premier conteneur de la section  */
+    .conteneurMainHome1{
+        gap: 20px;
+        background-color: #000;
+        width: auto;
+        padding: 0 0.5em;
     }
     .monImage{
         height: 70px;
         width: 70px;
-    }
+    } 
     .conteneurHappening{
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 0 3em;
+        padding: 0 ;
+        background-color: #000;
     }
     .conteneurHappening div{
-    padding-right: 0em;
+        
+        padding-right: 0em;
+        width: auto;
+        background-color: #000;
     }
     .conteneurHappeningWhat{
-    gap: 15px;
+        gap: 15px;
     }
     .conteneurHappeningWhat input{
-    color: #aeadad;
-    border-radius: 5px;
-    border: 0px solid ;
-    padding: 0.2em;
-    font-size: 19px;
-    background-color: #000;
-    width: auto;
+        color: #aeadad;
+        border-radius: 5px;
+        border: 2px solid ;
+        padding: 0em;
+        font-size: 19px;
+        background-color: #000;
+        width: 95%;
     }
     .Poster1{
-    width: 100%;
+    width: auto;
     height: 20em;
     align-items: center;
     }
     .Poster1-li{
         width: 50%;
     }
-
-    /* deuxième conteneur de la section */
+    /* deuxième conteneur de la section  */
     .conteneurMainHome2{
     gap: 10px;
+    background-color: #000;
+    padding:1 1em;
+    }
+    .conteneurMainHomeIMG{
+        padding-top: 0.5em;
+        padding-left: 0em;
     }
     .conteneurTitle{
-        gap: 2px;
+        display: flex;
+        flex-wrap: wrap;
         width: auto;
+        background-color: #000;
+        
     }
     .conteneurPublication{
         width: auto;
+        padding-top: 2em;
+        text-align: justify;
+        padding-right: 1em;
     }
-
     .imagePublié{
         width: 80%;
     }
@@ -665,16 +672,10 @@ body{
         height: 80px;
         text-decoration: none;
     }
-.conteneurMainHomeIMG{
-    padding-top: 0.5em;
-    padding-left: 0em;
 
 }
 
 
 
-
-
-}
 
 
